@@ -1,0 +1,63 @@
+:root{
+ --greyColor: rgba(0, 0, 0, 0.5);
+ --borderRadius: 25px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fafafc;
+    padding: 0px 15px; 
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header__titles .header__title{
+    font-size: 32spx;
+}
+
+.header__titles .header__subtitle{
+    font-size: 11px;
+    margin-top: 5px;
+    color: var(--greyColor);
+}
+
+.header__icon svg{
+    fill: var(--greyColor);
+    width: 15px;
+}
+
+.header__icon:first-child{
+    margin-right:15px;
+}
+
+.main{
+    margin: 50px 0;
+}
+
+.recipe{
+    height: 50vh;
+    border-radius: var(--borderRadius);
+    background-image: url("");
+}
