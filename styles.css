@@ -11,7 +11,8 @@ h1,
 h2,
 h3,
 h4,
-h5{
+h5,
+h6{
     margin: 0;
     padding: 0;
 }
@@ -22,7 +23,8 @@ body{
 }
 
 h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 38px;
 }
 
 .header{
@@ -54,10 +56,144 @@ h1{
 
 .main{
     margin: 50px 0;
+    margin-bottom: 110px;
 }
 
 .recipe{
-    height: 50vh;
+    height: 40vh;
+    border-radius: var(--borderRadius); 
+    background-image: url("https://i.pinimg.com/564x/73/19/7a/73197aec506ea674d2702e90715ee34e.jpg");
+    background-size: 100%;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.recipe .recipe__heart{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;    
+    width: 50px;
+    height: 50px;
     border-radius: var(--borderRadius);
-    background-image: url("");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.recipe__heart svg{
+    width: 20px;
+    fill: #ED4C67;
+}
+
+.recipe .recipe__info{
+    background-color: white;
+    border-radius: var(--borderRadius);
+    width: 90%;
+    padding: 10px 25px;
+    box-shadow: 0 7px 20px rgba(50, 50, 93, 0.11), 0 3px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    top: 50px;
+}
+
+.recipe__info .recipe__meta{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.recipe__info .recipe__title{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.recipe__meta{
+    color: var(--greyColor);
+    font-weight: 600;
+}
+
+.recipe__meta .recipe__meta-data{
+    font-family: 'Karla', sans-serif;
+}
+
+
+.recipe__info .recipe__social{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    
+}
+.recipe__social .recipe__social-item{
+    display: flex;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+   
+}
+
+.recipe__social-item svg{
+    margin-left: 8px;
+}
+
+
+.recipe__social-item{
+    margin-left: 10px;
+    fill: var(--greyColor);
+}
+
+.recommended .recommended__header{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.recommended__header .recommended__title{
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.recommended__header .recommended__small{
+    color:var(--greyColor);
+}
+
+.recommended__grid{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(120px, 1fr);
+    grid-auto-columns: minmax(120px, 1fr);
+    grid-gap: 25px;
+    overflow: scroll;
+}
+
+.recommended-recipe{
+    border-radius: var(--borderRadius);
+    height: 18vh;
+    background-image:url("https://i.pinimg.com/564x/8f/5a/b4/8f5ab40639f89696abb7b832b91d61fa.jpg");
+    background-position: bottom center;
+    background-size: 100%;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.recommended-recipe .recommended-recipe__info{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.recommended-recipe__info .recommended-recipe__title{
+    font-size: 10px;
+    font-weight: 700;
+}
+.recommended-recipe__info .recommended-recipe__subtitle{
+    font-size: 8px;
+    color: var(--greyColor);
 }
